@@ -1,11 +1,11 @@
-package com.dubbo.nacos.example.mallportal;
+package com.dubbo.nacos.example.userserviceprovider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MallPortalApplication {
+public class UserServiceProviderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MallPortalApplication.class, args);
+        SpringApplication.run(UserServiceProviderApplication.class, args);
     }
 }
