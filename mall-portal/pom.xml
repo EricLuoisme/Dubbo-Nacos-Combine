@@ -2,31 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example</groupId>
-    <artifactId>Dubbo-Nacos-Combine</artifactId>
-    <packaging>pom</packaging>
+    <groupId>com.dubbo.nacos.example</groupId>
+    <artifactId>mall-portal</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
-    <modules>
-        <module>ms-service</module>
-    </modules>
-
-    <name>Dubbo-Nacos-Combine</name>
+    <name>mall-portal</name>
     <description>Demo project for Spring Boot</description>
-
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.12.RELEASE</version>
-    </parent>
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
-        <spring-cloud-alibaba.version>2.2.6.RELEASE</spring-cloud-alibaba.version>
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
     </properties>
 
     <dependencies>
@@ -72,13 +59,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -97,9 +77,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.6.1</version>
+                <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.example.dubbonacoscombine.DubboNacosCombineApplication</mainClass>
+                    <mainClass>com.dubbo.nacos.example.mallportal.MallPortalApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
